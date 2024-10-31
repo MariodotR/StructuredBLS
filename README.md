@@ -2,6 +2,24 @@
 
 The `BLS` class implements a structured broad learning system (SBLS) model using basis functions and enhanced nodes for tasks such as classification and regression. This model leverages various sampling techniques (e.g., Gaussian, sigmoid, and GELU) for constructing basis functions, allowing it to capture diverse data patterns.
 
+
+## Quick Start Guide
+
+```python
+# Initialize BLS model
+model = BLS(1E-8, 10, 10, 10, sampling= ["gaussian", "gaussian"], task="classification")
+#Train
+train_x, train_y = ...  # Load or prepare your training dataset
+train_acc, train_time, output_weights = model.train(train_x, train_y)
+print("Training Accuracy:", train_acc)
+print("Training Time:", train_time)
+#inference
+test_x, test_y = ...  # Load or prepare your testing dataset
+test_acc, test_time, predictions = model.inference(test_x, test_y)
+print("Test Accuracy:", test_acc)
+print("Inference Time:", test_time)
+```
+
 ## Class Overview
 
 ### Methods
@@ -77,22 +95,7 @@ Incrementally adds more enhanced nodes to the BLS model.
 
 ---
 
-## Quick Start Guide
 
-```python
-# Initialize BLS model
-model = BLS(1E-8, 10, 10, 10, sampling= ["gaussian", "gaussian"], task="classification")
-#Train
-train_x, train_y = ...  # Load or prepare your training dataset
-train_acc, train_time, output_weights = model.train(train_x, train_y)
-print("Training Accuracy:", train_acc)
-print("Training Time:", train_time)
-#inference
-test_x, test_y = ...  # Load or prepare your testing dataset
-test_acc, test_time, predictions = model.inference(test_x, test_y)
-print("Test Accuracy:", test_acc)
-print("Inference Time:", test_time)
-```
 
 # Datasets:
 
