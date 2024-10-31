@@ -79,8 +79,6 @@ Incrementally adds more enhanced nodes to the BLS model.
 
 ## Quick Start Guide
 
-### Step 1: Import and Initialize
-
 ```python
 # Initialize BLS model
 model = BLS(1E-8, 10, 10, 10, sampling= ["gaussian", "gaussian"], task="classification")
