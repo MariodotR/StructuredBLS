@@ -110,3 +110,9 @@ Abalone: https://archive.ics.uci.edu/dataset/1/abalone
 Weather Izmir: https://sci2s.ugr.es/keel/dataset.php?cod=78
 
 Housing: https://keras.io/api/datasets/california_housing/
+
+Arcene: https://archive.ics.uci.edu/dataset/167/arcene
+
+GenExp: https://www.kaggle.com/datasets/crawford/gene-expression/data
+
+P53: https://archive.ics.uci.edu/dataset/188/p53+mutants
